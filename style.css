@@ -7,14 +7,30 @@
     font-family: "Poppins", sans-serif;
 }
 
+
+video {
+  position: fixed; /* Ensures the video stays in place while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%; /* Makes the video span the full width of the screen */
+  height: 100%; /* Makes the video span the full height of the screen */
+  object-fit: cover; /* Ensures the video covers the screen without distortion */
+  z-index: -1; /* Places the video behind other content */
+}
+
+
+
 body{
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+    /* background: linear-gradient(45deg, #0a0a0a, #3a4452); */
+    background: url(kitty.mp4);
 }
+
+
 
 .calculator{
     border: 1px solid #4A5C6A;
